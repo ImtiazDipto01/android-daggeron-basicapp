@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         btnGetMyTeam.setOnClickListener {
             tvPlayersName.text = bangladeshCricketTeam.getBestEleven()
+            tvCoachInfo.text = "Coach Name: ${bangladeshCricketTeam.getCoachName()}"
         }
     }
 }
