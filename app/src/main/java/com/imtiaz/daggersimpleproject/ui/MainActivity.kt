@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tvMyTeamPlayers.text = bangladeshCricketTeam.getBestEleven()
+        btnGetMyTeam.setOnClickListener {
+            tvPlayersName.text = bangladeshCricketTeam.getBestEleven()
+        }
+
     }
 }
