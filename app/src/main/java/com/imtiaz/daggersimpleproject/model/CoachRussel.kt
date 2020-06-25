@@ -2,7 +2,9 @@ package com.imtiaz.daggersimpleproject.model
 
 class CoachRussel private constructor() {
 
-    fun getCoachRusselInstance() = CoachRussel()
+    companion object {
+        fun getCoachRusselInstance() = CoachRussel()
+    }
 
     fun getName() : String = "Russle Domingo"
 
