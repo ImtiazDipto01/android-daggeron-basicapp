@@ -4,7 +4,7 @@ import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class BangladeshCricketTeam @Inject constructor(val players: Players, val coach: CoachRussel) {
+class BangladeshCricketTeam @Inject constructor(val players: Players, val coach: TeamCoach) {
 
     fun getBestEleven() : String = players.getPlayersNames()
 

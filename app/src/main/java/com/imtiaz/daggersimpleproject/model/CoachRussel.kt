@@ -1,12 +1,13 @@
 package com.imtiaz.daggersimpleproject.model
 
-class CoachRussel private constructor() {
+class CoachRussel private constructor() : TeamCoach {
 
     companion object {
         fun getCoachRusselInstance() = CoachRussel()
     }
 
-    fun getName() : String = "Russle Domingo"
+    override fun getName(): String  = "Russle Domingo"
 
-    fun getSpeciality() : String = "Batting & Junior player development"
+    override fun getSpeciality(): String  = "Batting & Junior player development"
+
 }
